@@ -1,0 +1,605 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1">
+    <title>O Bahiano Vidraçaria</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+    <!--[if lt IE 9]>
+    <script src="js/respond-1.1.0.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/html5element.js"></script>
+    <![endif]-->
+
+
+
+    <script>
+
+        var aux=0;
+        function scrollServicos(){
+
+            document.getElementById('nav-servicos').click();
+        }
+
+
+        function scrollContato(){
+
+            document.getElementById('nav-contato').click();
+        }
+
+        function start(){
+            document.getElementById('portfolio-todos').click();
+        }
+
+
+
+
+        /*
+         //<![CDATA[
+
+
+         function loadMap() {
+
+         var latlng = new google.maps.LatLng(-12.5498324, -38.7076953);
+
+
+         var myOptions = {
+         zoom: 16,
+         center: latlng,
+         mapTypeId: google.maps.MapTypeId.ROADMAP
+         };
+
+         var map = new google.maps.Map(document.getElementById("map_container"),myOptions);
+
+
+         var marker = new google.maps.Marker({
+         position: latlng,
+         draggable: true,
+         animation:google.maps.Animation.DROP,
+         map: map,
+         title:"O BAHIANO :)"
+         });
+
+
+         map.setCenter(latlng);
+         marker.setPosition(latlng);
+
+         }
+
+         //]]>*/
+
+
+    </script>
+
+
+
+</head>
+<body onload="start()">
+
+<!--Header_section-->
+<header id="header_wrapper" style="border-bottom-width: 1px; border-bottom-style: none;  border-bottom-color: rgb(154, 154, 154);">
+    <div class="container">
+        <div class="header_box">
+            <div class="logo"><a href="#"><img src="img/logo-small.png"  alt="logo"></a></div>
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                </div>
+                <div id="main-nav" class="collapse navbar-collapse navStyle">
+                    <ul class="nav navbar-nav" id="mainNav">
+                        <li class="active"><a href="#hero_section" id="nav-home" class="scroll-link">Home</a></li>
+                        <li><a href="#Portfolio" id="nav-servicos" class="scroll-link">Serviços</a></li>
+                        <li><a href="#aboutUs" class="scroll-link">Sobre</a></li>
+                        <li><a href="#contact" class="scroll-link" id="nav-contato">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<!--Header_section-->
+
+
+
+<section class="slider top_cont_outer" id="hero_section">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div id="carouselHacked" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="header-backup"></div>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox" style="max-height: 367px">
+                    <div class="item active" style="max-height: 367px">
+                        <img src="img/slide-promocao.png" alt="">
+                    </div>
+                    <div class="item" style="max-height: 367px">
+                        <img src="img/slide-desconto.png" alt="">
+
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carouselHacked" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carouselHacked" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section><!-- end of slider section -->
+
+
+
+
+<!-- Portfolio -->
+<section id="Portfolio" class="content" style=" background-color: #005490;">
+
+    <!-- Container -->
+    <div class="container portfolio_title">
+
+        <!-- Title -->
+        <div class="section-title" >
+            <h2 style="color: #ffffff">Nossos Serviços</h2>
+        </div>
+        <!--/Title -->
+
+    </div>
+    <!-- Container -->
+
+    <!-- Portfolio Filters -->
+    <div class="portfolio">
+
+        <div id="filters" class="sixteen columns">
+            <ul class="clearfix">
+                <li><a class="" href="#" data-filter=".geral" id="portfolio-todos" class="active">
+                    <h5>Geral</h5>
+                </a></li>
+                <li><a class="" href="#" onclick="scrollServicos()" data-filter=".box">
+                    <h5>Box para banheiro</h5>
+                </a></li>
+                <li><a class="" onclick="scrollServicos()" href="#" data-filter=".prototype">
+                    <h5>Portas de Vidro</h5>
+                </a></li>
+                <li><a class="" href="#" onclick="scrollServicos()" data-filter=".design">
+                    <h5>Janelas de Vidro</h5>
+                </a></li>
+                <li><a class="" href="#" onclick="scrollServicos()" data-filter=".espelho">
+                    <h5>Espelhos</h5>
+                </a></li>
+                <li><a class="" href="#" onclick="scrollServicos()" data-filter=".android">
+                    <h5>Vidro Comum</h5>
+                </a></li>
+                <li><a class="" href="#" onclick="scrollServicos()" data-filter=".janela-al">
+                    <h5>Janelas de Alumínio</h5>
+                </a></li>
+                <li><a class="" href="#" onclick="scrollServicos()" data-filter=".android">
+                    <h5>Portas de Alumínio</h5>
+                </a></li>
+                <li><a class="" href="#" onclick="scrollServicos()" data-filter=".android">
+                    <h5>Basculantes e Fecha pia</h5>
+                </a></li>
+                <li><a class="" href="#" onclick="scrollServicos()" data-filter=".android">
+                    <h5>Portões em Alumínio</h5>
+                </a></li>
+                <li><a class="" href="#" onclick="scrollServicos()" data-filter=".pedras">
+                    <h5>Mármores e Granitos</h5>
+                </a></li>
+                <li><a class="" href="#" onclick="scrollServicos()" data-filter=".web">
+                    <h5>Pias</h5>
+                </a></li>
+                <li><a class="" href="#" onclick="scrollServicos()" data-filter=".web">
+                    <h5>Persianas</h5>
+                </a></li>
+            </ul>
+        </div>
+        <!--/Portfolio Filters -->
+
+        <!-- Portfolio Wrapper -->
+        <div class="container isotope fadeInLeft animated wow" style="position: relative; overflow: hidden; height: 480px;" id="portfolio_wrapper">
+
+            <!-- Portfolio Item -->
+            <div style="padding:15px; position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="col-md-3 portfolio-item one-four  box isotope-item">
+                <div class="portfolio_img"> <img src="img/box/box1.jpg"  alt="Portfolio 1">
+                    <div class="item_overlay">
+                        <div class="item_info">
+                            <h4 class="project_name">Box em Vidro Incolor</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/Portfolio Item -->
+
+            <!-- Portfolio Item-->
+            <div style="padding:15px; position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class=" col-md-3  portfolio-item one-four  box geral isotope-item">
+                <div class="portfolio_img"> <img src="img/box/box2.jpg" alt="Portfolio 1">
+                    <div class="item_overlay">
+                        <div class="item_info">
+                            <h4 class="project_name">Box em Vidro Verde</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/Portfolio Item -->
+
+            <!-- Portfolio Item -->
+            <div style="padding:15px; position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="col-md-3 portfolio-item one-four  box  isotope-item">
+                <div class="portfolio_img"> <img src="img/box/box5.jpg" alt="Portfolio 1">
+                    <div class="item_overlay">
+                        <div class="item_info">
+                            <h4 class="project_name">Boxes Diversos</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/Portfolio Item-->
+
+            <!-- Portfolio Item-->
+            <div style="padding:15px; position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="col-md-3 portfolio-item one-four  box  prototype web isotope-item">
+                <div class="portfolio_img"> <img src="img/box/box4.jpg" alt="Portfolio 1">
+                    <div class="item_overlay">
+                        <div class="item_info">
+                            <h4 class="project_name">Box em Vidro Fumê</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Portfolio Item -->
+
+            <!-- Portfolio Item -->
+            <div style="padding:15px; position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="col-md-3 portfolio-item one-four  box isotope-item">
+                <div class="portfolio_img"> <img src="img/box/box5.jpg" alt="Portfolio 1">
+                    <div class="item_overlay">
+                        <div class="item_info">
+                            <h4 class="project_name">BOXES Diversos</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/Portfolio Item -->
+
+            <!-- Portfolio Item -->
+            <div style="padding:15px; position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="col-md-3 portfolio-item one-four  box isotope-item">
+                <div class="portfolio_img"> <img src="img/box/box6.jpg" alt="Portfolio 1">
+                    <div class="item_overlay">
+                        <div class="item_info">
+                            <h4 class="project_name">BOX em Vidro Verde</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/Portfolio Item -->
+
+            <!-- Portfolio Item  -->
+            <div style="padding:15px; position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="col-md-3 portfolio-item one-four box isotope-item">
+                <div class="portfolio_img"> <img src="img/box/box7.png" alt="Portfolio 1">
+                    <div class="item_overlay">
+                        <div class="item_info">
+                            <h4 class="project_name">Box em L</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/Portfolio Item -->
+
+            <!-- Portfolio Item -->
+            <div style="padding:15px; position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="col-md-3 portfolio-item one-four   box isotope-item">
+                <div class="portfolio_img"> <img src="img/box/box8.jpg" alt="Portfolio 1">
+                    <div class="item_overlay">
+                        <div class="item_info">
+                            <h4 class="project_name">Box em Acrílico</h4>
+                        </div>
+                    </div>
+                </div>
+
+             </div>
+            <!--/Portfolio Item -->
+
+
+
+
+            <!--  BOX BOX BOX BOX BOX BOX BOX BOX BOX BOX BOX BOX BOX BOX BOX BOX BOX BOX BOX BOX BOX BOX BOX BOX -->
+
+
+
+
+            <!-- Portfolio Item -->
+            <div style="padding:15px; position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="col-md-3 portfolio-item one-four janela-al isotope-item">
+                <div class="portfolio_img"> <img src="img/janela/janela1.jpg"  alt="Portfolio 1">
+                    <div class="item_overlay">
+                        <div class="item_info">
+                            <h4 class="project_name">Janela de Correr 4 BD</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/Portfolio Item -->
+
+            <!-- Portfolio Item-->
+            <div style="padding:15px; position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class=" col-md-3  portfolio-item one-four  janela-al geral isotope-item">
+                <div class="portfolio_img"> <img src="img/janela/janela2.jpg" alt="Portfolio 1">
+                    <div class="item_overlay">
+                        <div class="item_info">
+                            <h4 class="project_name">Janela de Correr 2 BD</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/Portfolio Item -->
+
+            <!-- Portfolio Item -->
+            <div style="padding:15px; position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="col-md-3 portfolio-item one-four  janela-al  isotope-item">
+                <div class="portfolio_img"> <img src="img/janela/janela3.jpg" alt="Portfolio 1">
+                    <div class="item_overlay">
+                        <div class="item_info">
+                            <h4 class="project_name">Janela Venêziana</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/Portfolio Item-->
+
+            <!-- Portfolio Item-->
+            <div style="padding:15px; position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="col-md-3 portfolio-item one-four  janela-al  prototype web isotope-item">
+                <div class="portfolio_img"> <img src="img/janela/janela4.jpg" alt="Portfolio 1">
+                    <div class="item_overlay">
+                        <div class="item_info">
+                            <h4 class="project_name">Janela com Grade</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Portfolio Item -->
+
+
+
+            <!-- JANELA AL JANELA AL JANELA AL JANELA AL JANELA AL JANELA AL JANELA AL JANELA AL  -->
+
+
+
+
+            <!-- Portfolio Item -->
+            <div style="padding:15px; position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="col-md-3 portfolio-item one-four pedras isotope-item">
+                <div class="portfolio_img"> <img src="img/pedras/pedra1.jpg"  alt="Portfolio 1">
+                    <div class="item_overlay">
+                        <div class="item_info">
+                            <h4 class="project_name">Balcão em Granito</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/Portfolio Item -->
+
+            <!-- Portfolio Item-->
+            <div style="padding:15px; position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class=" col-md-3  portfolio-item one-four  pedras geral isotope-item">
+                <div class="portfolio_img"> <img src="img/pedras/pedra2.jpg" alt="Portfolio 1">
+                    <div class="item_overlay">
+                        <div class="item_info">
+                            <h4 class="project_name">Escada em Granito</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/Portfolio Item -->
+
+            <!-- Portfolio Item -->
+            <div style="padding:15px; position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="col-md-3 portfolio-item one-four  pedras  isotope-item">
+                <div class="portfolio_img"> <img src="img/pedras/pedra3.jpg" alt="Portfolio 1">
+                    <div class="item_overlay">
+                        <div class="item_info">
+                            <h4 class="project_name">Tipos de Granito</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/Portfolio Item-->
+
+            <!-- Portfolio Item-->
+            <div style="padding:15px; position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="col-md-3 portfolio-item one-four  pedras  prototype web isotope-item">
+                <div class="portfolio_img"> <img src="img/pedras/pedra4.jpg" alt="Portfolio 1">
+                    <div class="item_overlay">
+                        <div class="item_info">
+                            <h4 class="project_name">Mesa em Granito</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Portfolio Item -->
+
+
+
+            <!-- PEDRAS PEDRAS PEDRAS PEDRAS PEDRAS PEDRAS PEDRAS PEDRAS  PEDRAS PEDRAS PEDRAS PEDRAS   -->
+
+
+
+
+            <!-- Portfolio Item -->
+            <div style="padding:15px; position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="col-md-3 portfolio-item one-four espelho geral isotope-item">
+                <div class="portfolio_img"> <img src="img/espelho/espelho1.jpg"  alt="Portfolio 1">
+                    <div class="item_overlay">
+                        <div class="item_info">
+                            <h4 class="project_name">Espelho bisotado</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/Portfolio Item -->
+
+            <!-- Portfolio Item-->
+            <div style="padding:15px; position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class=" col-md-3  portfolio-item one-four  espelho isotope-item">
+                <div class="portfolio_img"> <img src="img/espelho/espelho2.jpg" alt="Portfolio 1">
+                    <div class="item_overlay">
+                        <div class="item_info">
+                            <h4 class="project_name">Espelho para sala</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/Portfolio Item -->
+
+            <!-- Portfolio Item -->
+            <div style="padding:15px; position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="col-md-3 portfolio-item one-four  espelho  isotope-item">
+                <div class="portfolio_img"> <img src="img/espelho/espelho3.jpg" alt="Portfolio 1">
+                    <div class="item_overlay">
+                        <div class="item_info">
+                            <h4 class="project_name">Espelho para banheiro</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/Portfolio Item-->
+
+            <!-- Portfolio Item-->
+            <div style="padding:15px; position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="col-md-3 portfolio-item one-four  espelho  prototype web isotope-item">
+                <div class="portfolio_img"> <img src="img/espelho/espelho4.jpg" alt="Portfolio 1">
+                    <div class="item_overlay">
+                        <div class="item_info">
+                            <h4 class="project_name">Espelho para banheiro</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Portfolio Item -->
+
+        </div>
+        <!--/Portfolio Wrapper -->
+
+    </div>
+    <!--/Portfolio Filters -->
+
+    <div class="portfolio_btm"></div>
+
+
+    <div id="project_container">
+        <div class="clear"></div>
+        <div id="project_data"></div>
+    </div>
+
+
+</section>
+<!--/Portfolio -->
+
+
+
+
+<section id="aboutUs"><!--Aboutus-->
+    <div class="inner_wrapper">
+        <div class="container">
+            <h2>Sobre O Bahiano</h2>
+            <div class="inner_section">
+                <div class="row">
+                    <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right"><img src="img/fachada.png"  style="border-radius: 8px;" class="img-circle delay-03s animated wow zoomIn" alt=""></div>
+                    <div class=" col-lg-7 col-md-7 col-sm-7 col-xs-12 pull-left">
+                        <div class=" delay-01s animated fadeInDown wow animated" style="font-size: 16px; color: black">
+                            <p>O Bahiano Vidraçaria, é uma empresa que vem atuando no mercado desde 1965, sempre inovando e trazendo produtos e serviços da mais alta qualidade para nossos clientes. O Bahiano já é sinônimo de tradição na venda de produtos como: </p> <br/>
+                            <ul style="list-style: inherit">
+                                <li>Vidros Temperados (Portas, Janelas, Box, entre outros)</li>
+                                <li>Esquadrias de Alumínio (Portas, Janelas, Basculantes, Fecha Pia, entre outros)</li>
+                                <li>Mármores e Granitos (Balcões, Soleiras, Peitoris, Escadas, entre outros)</li>
+                                <li>Espelhos (Diversos formatos e modelos)</li>
+                                <li>Persianas (Em PVC, Tecido e Metal)</li>
+                            </ul>
+                            <br/>
+                            <p>A sede do O Bahiano fica localizada na cidade de Santo Amaro na praça do mercado. Nosso horário de funcionamento vai das 08:00 às 18:00 de segunda-feira à sexta-feira, e das 08:00 às 12:00 aos sábados. Apesar da nossa empresa estar em Santo Amaro, nós também realizamos serviços de entrega e montagem nas seguintes localizações:</p><br/>
+
+                            <ul class="col-md-6" style="list-style: inherit">
+                                <li>São Braz</li>
+                                <li>Acupe</li>
+                                <li>Saubara</li>
+                            </ul>
+                            <ul col-md-6 style="list-style: inherit">
+                                <li>Cabuçu</li>
+                                <li>Pedras</li>
+                                <li>São Francisco do Conde</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<!--Aboutus-->
+
+
+<!--Footer-->
+<footer class="footer_wrapper" id="contact" style="background-color: #005490">
+    <div class="container">
+        <section class="page_section contact" id="contact" style="height: 300px;padding-top: 50px">
+            <div class="contact_section">
+                <div class="row wow fadeInLeft" style="color: #ffffff">
+                    <div class="col-lg-8 col-lg-offset-2 text-center" style="padding-bottom: 30px">
+                        <h2 class="section-heading" style="color: white;margin-bottom: 30px;">Entre em Contato!</h2>
+                        <h4>Entre em contato com a equipe do O Bahiano para descobrir os menores preços e os melhores serviços do recôncavo baiano.</h4>
+                    </div>
+                    <div class="col-lg-4  text-center">
+                        <i class="fa fa-phone fa-3x"></i>
+                        <p>(75)32411297</p>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <i class="fa fa-whatsapp fa-3x"></i>
+                        <p>(75)91220843</p>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <i class="fa fa-envelope-o fa-3x" data-wow-delay=".1s"></i>
+                        <p><a href="mailto:your-email@your-domain.com" style="color: #ffffff">obahiano@ig.com.br</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+
+
+    <div class="container">
+        <div class="footer_bottom"><span >Avenida Ferreira Bandeira, 02, Praça do Mercado. Santo Amaro-BA, Brasil.</span><span>Copyright © 2014,    Template by <a href="http://webthemez.com" style="color: #ffffff">WebThemez.com</a>. </span> </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+<script type="text/javascript" src="js/jquery.nav.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script type="text/javascript" src="js/wow.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+
+
+
+</body>
+</html>
