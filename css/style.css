@@ -24,7 +24,7 @@ img {
 }
 
 a, a:hover, a:active {
-    outline: 0px !important;
+    /* outline: 0px !important; */
 }
 .clear {
     clear: both;
